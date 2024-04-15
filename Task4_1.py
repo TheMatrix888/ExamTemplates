@@ -15,7 +15,7 @@ def available_positions(code=""):
     for letter, letter_code in table.items():
         if code == letter_code:
             return False
-    if len(code) > 4:
+    if len(code) > 3:
         print(code)
         return True
     h = [available_positions(code + digit) for digit in "01"]
